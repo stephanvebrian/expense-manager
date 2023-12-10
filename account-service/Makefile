@@ -1,4 +1,4 @@
 .PHONY:
 
 run-app:
-	go run cmd/grpc/main.go
+	go run cmd/account-service-grpc/*
