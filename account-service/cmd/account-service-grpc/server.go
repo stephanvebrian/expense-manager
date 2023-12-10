@@ -15,7 +15,7 @@ type handler struct {
 	grpc grpcHandler.IHandler
 }
 
-func startServer(ctx context.Context, cfg config.Config, handler handler) error {
+func startServer(ctx context.Context, cfg *config.Config, handler handler) error {
 	lis, err := net.Listen("tcp", ":50051")
 	if err != nil {
 		return err

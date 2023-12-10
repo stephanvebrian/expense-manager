@@ -7,7 +7,7 @@ import (
 	grpcHandler "github.com/stephanvebrian/expense-manager/account-service/internal/handler/grpc"
 )
 
-func startApp(cfg config.Config) error {
+func startApp(cfg *config.Config) error {
 	ctx := context.Background()
 
 	// initialize external client, database, redis, etc

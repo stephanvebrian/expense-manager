@@ -12,10 +12,10 @@ type IHandler interface {
 }
 
 type handler struct {
-	cfg config.Config
+	cfg *config.Config
 }
 
-func New(cfg config.Config) IHandler {
+func New(cfg *config.Config) IHandler {
 	return &handler{
 		cfg: cfg,
 	}
