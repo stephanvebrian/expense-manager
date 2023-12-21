@@ -1,6 +1,6 @@
 module github.com/stephanvebrian/expense-manager/common
 
-go 1.21.3
+go 1.18
 
 require (
 	google.golang.org/grpc v1.59.0

@@ -1,6 +1,6 @@
 module github.com/stephanvebrian/expense-manager/account-service
 
-go 1.21.3
+go 1.18
 
 require (
 	github.com/knadh/koanf/parsers/yaml v0.1.0
