@@ -1,0 +1,3 @@
+server:
+  grpc:
+    address: ":50051"

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "github.com/stephanvebrian/expense-manager/common/transaction-service";
+
+package transactionservice;
+
+service TransactionService {
+    rpc Ping (GetPingRequest) returns (GetPingResponse) {}
+}
+
+message GetPingRequest {
+    string eventLabel = 1;
+}
+
+message GetPingResponse {
+    string message = 1;
+}
